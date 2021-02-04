@@ -16,6 +16,13 @@ Example:
 docker-compose run --rm chirpstack-simulator make clean build
 ```
 
+To run it on MacOS/darwin, just be sure to use a local install of Go and create the build without docker
+
+```sh
+make build
+```
+
+
 The binary will be located under `build/chirpstack-simulator`.
 
 ## Configuration

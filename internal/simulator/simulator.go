@@ -218,7 +218,7 @@ func (s *simulation) runSimulation() error {
 			simulator.WithAppKey(appKey),
 			simulator.WithUplinkInterval(s.uplinkInterval),
 			simulator.WithOTAADelay(time.Duration(mrand.Int63n(int64(s.activationTime)))),
-			simulator.WithUplinkPayload(false, s.fPort, s.payload),
+			simulator.WithUplinkPayload(true, s.fPort, s.payload),
 			simulator.WithGateways(gws),
 			simulator.WithUplinkTXInfo(gw.UplinkTXInfo{
 				Frequency:  uint32(s.frequency),
